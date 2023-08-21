@@ -45,48 +45,47 @@ plotting_args:
   color: category
   linewidth: 0.2
 run_control:
-  store:
-    c:
-      marker:
-        LED: white
-        S1: white
-        S2: yellow
-        S5: black
-    color:
-      category:
-        1.5C high overshoot: xkcd:darkish blue
-        1.5C low overshoot: xkcd:bluish
-        Above 2C: darkgrey
-        Below 1.5C: xkcd:baby blue
-        Higher 2C: xkcd:red
-        Lower 2C: xkcd:orange
-      subcategory:
-        Above 2C: darkgrey
-        Below 1.5C (I): xkcd:baby blue
-        Below 1.5C (II): xkcd:baby blue
-        Higher 1.5C high overshoot: xkcd:darkish blue
-        Higher 1.5C low overshoot: xkcd:bluish
-        Higher 2C: xkcd:red
-        Lower 1.5C high overshoot: xkcd:darkish blue
-        Lower 1.5C low overshoot: xkcd:bluish
-        Lower 2C: xkcd:orange
-    edgecolors:
-      marker:
-        LED: black
-        S1: black
-        S2: black
-        S5: black
-    linestyle: {}
+  c:
     marker:
-      marker:
-        ? ''
-        : null
-        LED: o
-        S1: s
-        S2: s
-        S5: s
-    region_mapping:
-      default: /Users/aa/.pyenv_intel/versions/anaconda3-2018.12/lib/python3.7/site-packages/pyam/region_mappings/default_mapping.csv
+      LED: white
+      S1: white
+      S2: yellow
+      S5: black
+  color:
+    category:
+      1.5C high overshoot: xkcd:darkish blue
+      1.5C low overshoot: xkcd:bluish
+      Above 2C: darkgrey
+      Below 1.5C: xkcd:baby blue
+      Higher 2C: xkcd:red
+      Lower 2C: xkcd:orange
+    subcategory:
+      Above 2C: darkgrey
+      Below 1.5C (I): xkcd:baby blue
+      Below 1.5C (II): xkcd:baby blue
+      Higher 1.5C high overshoot: xkcd:darkish blue
+      Higher 1.5C low overshoot: xkcd:bluish
+      Higher 2C: xkcd:red
+      Lower 1.5C high overshoot: xkcd:darkish blue
+      Lower 1.5C low overshoot: xkcd:bluish
+      Lower 2C: xkcd:orange
+  edgecolors:
+    marker:
+      LED: black
+      S1: black
+      S2: black
+      S5: black
+  linestyle: {}
+  marker:
+    marker:
+      ? ''
+      : null
+      LED: o
+      S1: s
+      S2: s
+      S5: s
+  region_mapping:
+    default: /Users/aa/.pyenv_intel/versions/anaconda3-2018.12/envs/iam-original/lib/python3.7/site-packages/pyam/region_mappings/default_mapping.csv
 subcats:
 - Below 1.5C (I)
 - Below 1.5C (II)
