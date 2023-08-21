@@ -1,6 +1,5 @@
 name: iam-original
 channels:
-  - https://anaconda.org/conda-forge/pyam/0.5.0/download
   - defaults
 dependencies:
   - anyio=3.5.0
