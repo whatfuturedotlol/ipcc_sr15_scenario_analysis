@@ -44,7 +44,7 @@ marker:
 plotting_args:
   color: category
   linewidth: 0.2
-run_control: !!python/object:pyam.run_control.RunControl
+run_control:
   store:
     c:
       marker:
@@ -86,7 +86,7 @@ run_control: !!python/object:pyam.run_control.RunControl
         S2: s
         S5: s
     region_mapping:
-      default: /Applications/anaconda/lib/python3.6/site-packages/pyam/region_mappings/default_mapping.csv
+      default: /Users/aa/.pyenv_intel/versions/anaconda3-2018.12/lib/python3.7/site-packages/pyam/region_mappings/default_mapping.csv
 subcats:
 - Below 1.5C (I)
 - Below 1.5C (II)
