@@ -1,5 +1,4 @@
-# data and output directories
-data/*
+# output directories
 assessment/output/*
 
 # Apple file system
@@ -16,9 +15,7 @@ assessment/output/*
 # data files
 *~
 ~*
-*csv
-*xlsx
-*.yaml
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
