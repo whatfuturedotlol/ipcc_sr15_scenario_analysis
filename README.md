@@ -29,6 +29,23 @@ and the cross-references to figures, tables and assessment in the SR15.
 A rendered version of this repository and the notebooks are available at
 [data.ene.iiasa.ac.at/sr15_scenario_analysis](https://data.ene.iiasa.ac.at/sr15_scenario_analysis).
 
+## Fixed version release notes
+
+I had to make a few small changes to the Notebook sr15_2.0_categories_indicators to get it to work correctly
+
+- replace block 90 with specs['run_control'] = rc.store
+this fixes constructor errors with the new yaml
+
+- update exceedance_meta functions to 'raw=False'
+
+exceedance_meta = median_temperature.apply(exceedance, axis=1, raw=False,
+                                       years=median_temperature.columns, threshold=1.5)
+
+exceedance_meta = median_temperature.apply(exceedance, axis=1, raw=False,
+                                       years=median_temperature.columns, threshold=2)
+
+this fixes an Attribute error from numpy.ndarray
+
 ## Data release notes
 
 We are using this repository to track data issues identified in the scenario
